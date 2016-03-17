@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace MrRoboto
-{
+{                        
     public class Robot
-    {
-        public String RobotName;
-        public String RobotColor;
-        public int RobotDamage;
-        public int RobotEnergy;
+        {
+            public String RobotName;
+            public int RobotDamage;
+            public int RobotEnergy;
         
     }
 }

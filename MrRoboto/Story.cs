@@ -19,9 +19,9 @@ namespace MrRoboto
                "there is currently some choice in Robot kind. Most of the time there is only Battle bots and you have no chioce." + LineBreak +
                "I'll be right back, I need to check what we have available...." + LineBreak +
                "Well, we have 3 choices." + LineBreak + 
-               "1. Battle Bot" + LineBreak +
-               "2. Chef Bot" + LineBreak +
-               "3. Chauffeur Bot" + LineBreak);
+               "1. BattleBot" + LineBreak +
+               "2. ChefBot" + LineBreak +
+               "3. SpyBot" + LineBreak);
             RobotEnergy -= 5;
             BotChoice = int.Parse(Console.ReadLine());
             userSelect.ChoiceSwitch(BotChoice, RobotEnergy);

@@ -53,7 +53,7 @@ namespace MrRoboto
                 } Console.WriteLine("You're out of battery power. Donsomagunzo");
                 Console.ReadLine();
 
-            }else if (restaurant == 2)                  //4-STAR RESTAURANT
+            }else if (restaurant == 2)                  //2-STAR RESTAURANT
             {
                 Console.WriteLine("You have decided to work for a 2-Star restaurant. You don't really have that many options when it comes to what" + LineBreak +
                     "you're able to cook because this is a crappy 2-Star restaurant." + LineBreak);
