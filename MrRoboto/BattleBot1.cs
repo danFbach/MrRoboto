@@ -9,8 +9,7 @@ namespace MrRoboto
     public class BattleBot1 : Robot
     {
         public int RedLaser;
-        public BattleBot1() {
-            //String RobotName, String RobotColor, int RobotEnergy, int RobotDamage, int redLaser
+        public BattleBot1(int battleBot1Life) {                                                                       
 
         }
     }

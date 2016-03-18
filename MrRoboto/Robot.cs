@@ -12,6 +12,19 @@ namespace MrRoboto
             public String RobotName;
             public int RobotDamage;
             public int RobotEnergy;
-        
+            public int BattleBot1Life;
+            public int BattleBot2Life;
+
+        public void BattleType(String RobotName,int RobotEnergy)
+        {
+            Console.WriteLine(RobotName + " " + RobotEnergy);
+            Console.ReadLine();
+
+        }
+
+
+
+
+                                            
     }
 }

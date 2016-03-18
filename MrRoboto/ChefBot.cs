@@ -11,13 +11,12 @@ namespace MrRoboto
         int restaurant;
         int TwoStar;
         String FoodMade;
+        public String FoodMadeL;
         public String LineBreak = Environment.NewLine;
-        public ChefBot()
-
-        {                     
-
+        public ChefBot()                        
+        {
         }
-        public void ChefBotLife(String RobotName, int RobotEnergy)
+        public void ChefBotStory(String RobotName, int RobotEnergy)
         {
             Console.WriteLine("It's cooking time " + RobotName + "bot." + LineBreak +
                "You must decide where you want to cook." + LineBreak +
@@ -32,10 +31,15 @@ namespace MrRoboto
                 while (RobotEnergy > 0)
                 {
                     Console.WriteLine("What kind of food would you like to make for your customers " + RobotName + "." + LineBreak +
-                        "Please enter whatever kind of food you like.");
+                        "Please enter whatever kind of food you like. Or Charge.");
                     FoodMade = Console.ReadLine();
-
-                    if (FoodMade.Length > 5 && FoodMade.Length < 10)
+                    FoodMadeL = FoodMade.ToLower();
+                    if (FoodMadeL.Equals("charge"))
+                    {
+                        RobotEnergy += 15;
+                        Console.WriteLine(LineBreak + "Your new battery level is " + RobotEnergy + "%" + LineBreak);
+                    }                                          
+                    else if (FoodMade.Length > 5 && FoodMade.Length < 10)
                     {
                         RobotEnergy -= 10;
                         Console.WriteLine(LineBreak + FoodMade + "! Great decision " + RobotName + "bot. " + LineBreak + "You used some battery to make the food, your current Battery Level is: " + RobotEnergy + LineBreak); 
@@ -45,7 +49,8 @@ namespace MrRoboto
                         RobotEnergy -= FoodMade.Length;
                         Console.WriteLine(LineBreak + FoodMade + "! Great decision " + RobotName + "bot. " + LineBreak + "You used some battery to make the food, your current Battery Level is: " + RobotEnergy + LineBreak); 
                     }
-                    else {
+                    else
+                    {
                         RobotEnergy -= 5;
                         Console.WriteLine(LineBreak + FoodMade + "! Great decision " + RobotName + "bot. " + LineBreak + "You used some battery to make the food, your current Battery Level is: " + RobotEnergy + LineBreak);
                     }
