@@ -11,9 +11,7 @@ namespace MrRoboto
         int SpyChoice1;
         int SpyChoice2_1;
         int SpyChoice2_2;
-        int SpyChoice2_3;
-
-        public String LineBreak = Environment.NewLine;
+        int SpyChoice2_3;       
         public SpyBot()
         {
 

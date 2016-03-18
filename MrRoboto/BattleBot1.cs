@@ -8,9 +8,9 @@ namespace MrRoboto
 {
     public class BattleBot1 : Robot
     {
-        public int RedLaser;
-        public BattleBot1(int battleBot1Life) {                                                                       
+        public BattleBot1() {                                                                       
 
         }
+        public void Battle1v1(String RobotName, int RobotEnergy) { }
     }
 }
