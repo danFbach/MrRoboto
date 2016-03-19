@@ -12,6 +12,7 @@ namespace MrRoboto
         ChefBot cook = new ChefBot();
         SpyBot BotJamesBot = new SpyBot();              
         public String RobotName;
+        public String LineBreak = Environment.NewLine;
 
         public void ChoiceSwitch(int BotChoice, int RobotEnergy) {
             switch (BotChoice) {
