@@ -12,12 +12,11 @@ namespace MrRoboto
         int TwoStar;
         String FoodMade;
         public String FoodMadeL;
-        public String LineBreak = Environment.NewLine;
-        public ChefBot()                        
-        {
-        }
+        public String LineBreak;  
         public void ChefBotStory(String RobotName, int RobotEnergy)
         {
+
+            LineBreak = Environment.NewLine;
             Console.WriteLine("It's cooking time " + RobotName + "bot." + LineBreak +
                "You must decide where you want to cook." + LineBreak +
                "1. A 5-Star Restaurant." + LineBreak +

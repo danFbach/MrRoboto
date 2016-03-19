@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace MrRoboto
 {
-    public class SpyBot : Robot
+    public class SpyBot
     {
         int SpyChoice1;
         int SpyChoice2_1;
         int SpyChoice2_2;
-        int SpyChoice2_3;       
-        public SpyBot()
-        {
-
-        }
+        int SpyChoice2_3;
+        public String LineBreak = Environment.NewLine;
+        
         public void SpyMission(String RobotName, int RobotEnergy)
         {
             int i;

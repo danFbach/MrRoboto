@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MrRoboto
 {
-    public class BotChoiceDirection : Story
+    public class BotChoiceDirection
     {
         Robot battleBots = new Robot();
         ChefBot cook = new ChefBot();
