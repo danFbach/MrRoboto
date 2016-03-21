@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace MrRoboto
 {
     public class BattleBot2
-    {           
-        public int AILife = 100;
+    {                            
         public int AIEnergy = 100;
         public int LaserPower;
         int RobotEnergy;
@@ -34,7 +33,9 @@ namespace MrRoboto
         {
             for (int i = 0; i < 25;i++)
             {
-                while (AILife > 0 && RobotEnergy > 0) {
+                Console.WriteLine("You have now defeated " + i + " bot(s), you have " + (25 - i) + " robots remaining.");
+                AIEnergy = 100;
+                while (AIEnergy > 0 && RobotEnergy > 0) {
 
 
                     if (RobotEnergy > 100) { RobotEnergy = 100; Console.WriteLine("Your bot is already fully charged at 100%"); }
@@ -76,9 +77,9 @@ namespace MrRoboto
 
 
 
-                } Console.WriteLine("You have now defeated " + i + " bots, you have " + (25-i) + " robots remaining." );
+                }
 
-            }
+            }     Console.WriteLine("You have defeated all enemy robots.");
         }
     }
 }
