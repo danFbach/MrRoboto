@@ -3,3 +3,4 @@ c:\users\dan dcc\documents\visual studio 2015\Projects\MrRoboto\MrRoboto\bin\Deb
 c:\users\dan dcc\documents\visual studio 2015\Projects\MrRoboto\MrRoboto\bin\Debug\MrRoboto.pdb
 c:\users\dan dcc\documents\visual studio 2015\Projects\MrRoboto\MrRoboto\obj\Debug\MrRoboto.exe
 c:\users\dan dcc\documents\visual studio 2015\Projects\MrRoboto\MrRoboto\obj\Debug\MrRoboto.pdb
+C:\Users\Dan DCC\Documents\Visual Studio 2015\Projects\MrRoboto\MrRoboto\obj\Debug\MrRoboto.csprojResolveAssemblyReference.cache

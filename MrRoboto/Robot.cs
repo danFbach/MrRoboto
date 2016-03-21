@@ -40,6 +40,7 @@ namespace MrRoboto
                 Console.WriteLine("Great " + RobotName + ", you've picked the Green laser, my personal favorite. Now you just have to pick"+
                     " what type of battlebot you'd like to be..." +
                     LineBreak + "1. 1v1 2. Military");
+
                 battleChoice = int.Parse(Console.ReadLine());
                 if (battleChoice == 1)
                 {
@@ -59,12 +60,12 @@ namespace MrRoboto
                 if (battleChoice == 1)
                 {
                     Console.WriteLine("choice1");
-                    //battle1.Battle1v1(RobotName, RobotEnergy);
+                    battle1.Battle1v1(RobotName, RobotEnergy, lazurrr);
                 }
                 else if (battleChoice == 2)
                 {
                     Console.WriteLine("choice1");
-                    //battle2.Military(RobotName, RobotEnergy);
+                    battle2.Military(RobotName, RobotEnergy, lazurrr);
                 }
             } 
         }
