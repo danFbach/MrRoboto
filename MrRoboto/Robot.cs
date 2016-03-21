@@ -9,8 +9,8 @@ namespace MrRoboto
 {
     public class Robot
     {
-        //BattleBot1 battle1 = new BattleBot1();
-        //BattleBot2 battle2 = new BattleBot2();
+        BattleBot1 battle1 = new BattleBot1();
+        BattleBot2 battle2 = new BattleBot2();
                                 
         public String lazurrr;
         public String LineBreak;
@@ -23,8 +23,10 @@ namespace MrRoboto
 
         public void LazurrrType(String RobotName, int RobotEnergy)
         {
-            Console.WriteLine("Now you must pick a red or green laser. Red lasers are more powerful but greens fire more rapidly. Make a choice, green or red. Also, be aware that if you pick the green lazur you must sacrifice 20% of your battery life.");
+            Console.WriteLine("Now you must pick a red or green laser. Red lasers are more powerful but greens fire more rapidly." +
+                "Make a choice, green or red. Also, be aware that if you pick the green lazur you must sacrifice 20% of your battery life.");
             lazurrr = Console.ReadLine();
+            lazurrr = lazurrr.ToLower();
             BattleType(RobotName, RobotEnergy);
         }
         public void BattleType(String RobotName, int RobotEnergy)
@@ -35,18 +37,19 @@ namespace MrRoboto
             if (lazurrr.Equals("green"))
             {
                 RobotEnergy -= 20;
-                Console.WriteLine("Great " + RobotName + ", you've picked the Green laser, my personal favorite. Now you just have to pick what type of battlebot you'd like to be..." +
+                Console.WriteLine("Great " + RobotName + ", you've picked the Green laser, my personal favorite. Now you just have to pick"+
+                    " what type of battlebot you'd like to be..." +
                     LineBreak + "1. 1v1 2. Military");
                 battleChoice = int.Parse(Console.ReadLine());
                 if (battleChoice == 1)
                 {
                     Console.WriteLine("choice1");
-                    //battle1.Battle1v1(RobotName, RobotEnergy);
+                    battle1.Battle1v1(RobotName, RobotEnergy, lazurrr);
                 }
                 else if (battleChoice == 2)
                 {
                     Console.WriteLine("choice2");
-                    //battle2.Military(RobotName, RobotEnergy);
+                    battle2.Military(RobotName, RobotEnergy, lazurrr);
                 }
             }
             else if (lazurrr.Equals("red")){
