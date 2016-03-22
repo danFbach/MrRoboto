@@ -8,7 +8,7 @@ namespace MrRoboto
 {
     public class BotChoiceDirection
     {
-        Robot battleBots = new Robot();
+        lazur pickLaser = new lazur();   
         ChefBot cook = new ChefBot();
         SpyBot BotJamesBot = new SpyBot();              
         public String RobotName;
@@ -21,7 +21,7 @@ namespace MrRoboto
                         "who CHOOSE to live the rest of their concious lives as a battle bot. Your name is now Connor, Pvt. Mitch Connor.");
                     RobotName = "Connor, Pvt. Mitch Connor";
                     RobotEnergy = 100;
-                    battleBots.LazurrrType(RobotName, RobotEnergy);
+                    pickLaser.LazurrrType(RobotName, RobotEnergy);
                     
                     break;
                 case 2:
